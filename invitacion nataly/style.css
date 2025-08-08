@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7e9e9;
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://source.unsplash.com/1600x900/?celebration,party,pink');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.main-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #d1495b;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+.date, .venue {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.location-btn {
+    background-color: #4CAF50; /* Verde para la ubicación */
+}
+
+.confirm-btn {
+    background-color: #007bff; /* Azul para confirmar */
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Media Queries para Tablets y PCs */
+@media (min-width: 768px) {
+    .buttons-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 45%;
+    }
+
+    .main-title {
+        font-size: 4em;
+    }
+}
